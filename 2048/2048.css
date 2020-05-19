@@ -65,3 +65,7 @@ header>p{
     position: absolute;
 
 }
+.musicplayer{
+    width: 500px;
+    margin: 0 auto;
+}

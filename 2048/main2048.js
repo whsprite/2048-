@@ -150,7 +150,7 @@ function moveRight(){
       return false;
   }
   for( var i = 0 ; i < 4 ; i ++ )
-    for( var j = 0 ; j < 3 ; j ++ ){
+    for( var j = 2 ; j >=0 ; j --){
         if(board[i][j] != 0){
             for(var k=3;k>j;k--){
                 if( board[i][k] == 0 && noBlockHorizontal( i , j, k , board ) ){
@@ -213,7 +213,7 @@ function moveUp(){
     if(!canMoveDown(board)){
         return false;
     }
-    for( var i = 0 ; i < 3 ; i ++ )
+    for( var i = 2 ; i >= 0 ; i -- )
       for( var j = 0 ; j < 4 ; j ++ ){
           if(board[i][j] != 0){
               for(var k=3;k>i;k--){
